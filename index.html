@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Maple Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/52406ad708.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="imgs/logo3.2.png" alt="Red Maple Consulting Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Welcome to <span>Red Maple Consulting</span></h1>
+                <p>Professionalism • Integrity • Client Focus</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Company -->
+    <section id="about">
+        <div class="container">
+            <h1 class="sub-title">About Us</h1>
+            <p>
+            Red Maple Consulting is a student-founded consulting firm built on the principles of professionalism, integrity, and client focus. Formed by four University of Alberta students from both Edmonton and Calgary, the company represents the unity, balance, and shared purpose that define Alberta’s business landscape. The firm’s name — inspired by Canada’s iconic maple leaf — reflects its commitment to growth, strength, and meaningful contribution.
+            </p>
+            <br>
+            <p>
+                With combined expertise in business economics, law, accounting, and finance, we deliver practical, data-driven solutions that help organizations grow with confidence. Each member contributes unique strengths—from leadership and analysis to problem-solving and communication—ensuring every project benefits from diverse perspectives.
+            </p>
+            <br>
+            <p>
+                What sets Red Maple Consulting apart is its collaborative spirit. Each team member contributes not only their technical and academic knowledge but also their dedication to teamwork and communication. The firm values inclusivity, critical thinking, and a shared sense of accountability. Whether through detailed analysis, structured planning, or effective presentation, Red Maple Consulting strives to create outcomes that are clear, actionable, and impactful.
+            </p>
+            <br>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h1 class="sub-title">Our Team</h1>
+            <div class="team-list">
+                <!-- Member 1 -->
+                <div class="team-member">
+                    <img src="imgs/member1.png" alt="Isaac Mork">
+                    <h2>Isaac Mork</h2>
+                    <h4>Technical Analyst</h4>
+                    <p>
+                        Isaac Mork is a University of Alberta Bachelor of Commerce student majoring in International Business, with minors in Business Economics and Law and Geography. He focuses on strategic problem-solving, innovation, and community leadership, combining data analysis and interpersonal insights to address complex challenges.
+                    </p>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-member">
+                    <img src="imgs/member2.png" alt="Leo Nycz">
+                    <h2>Leo Nycz</h2>
+                    <h4>Marketing & Communications Lead</h4>
+                    <p>
+                        Leo Nycz is pursuing a Bachelor of Commerce in Business Economics and Law at the University of Alberta. He excels in quantitative analysis and data interpretation, applying objective, data-driven approaches to understand and solve real-world business problems.
+
+                    </p>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-member">
+                    <img src="imgs/member3.png" alt="Jacob Nguyen">
+                    <h2>Jacob Nguyen</h2>
+                    <h4>Data & Systems Analyst</h4>
+                    <p>
+                        Jacob Nguyen is a second-year Bachelor of Commerce student majoring in Accounting and a University of Alberta Computer Science graduate. He combines technical and analytical skills with business knowledge to tackle complex projects, bringing reliability, curiosity, and a detail-oriented perspective.
+
+                    </p>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="team-member">
+                    <img src="imgs/member4.png" alt="Nathan Pham">
+                    <h2>Nathan Pham</h2>
+                    <h4>Research & Development Lead</h4>
+                    <p>
+                        Nathan Pham is a second-year Bachelor of Commerce student majoring in Finance at the University of Alberta. With experience in business management and skills in Excel and Python, he approaches problems with both analytical rigor and practical insight, applying his abilities to data-driven decision-making.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Us</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i> redmapleconsulting@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (780) 222-2025</p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Red Maple Consulting. All rights reserved.</p>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+        function openmenu(){ sidemenu.style.right = "0"; }
+        function closemenu(){ sidemenu.style.right = "-200px"; }
+    </script>
+</body>
+</html>
