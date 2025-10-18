@@ -151,7 +151,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: var(--FONTCOLOR);
+    color: var(--BACKGROUND);
 
 }
 
@@ -167,6 +167,15 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+}
+.instagram-link {
+    color: black; /* text color black */
+    text-decoration: none; /* optional: remove underline */
+}
+
+.instagram-link:hover {
+    color: var(--ACCENTCOLOR); /* optional: accent color on hover */
+    text-decoration: underline; /* optional: underline on hover */
 }
 
 .tab-links::after{
@@ -367,8 +376,8 @@ nav .fa-solid.fa-xmark, .fa-solid.fa-bars{
 /* ----------- Team Section ----------- */
 #team {
     padding: 80px 0;
-    color: var(--FONTCOLOR);
-    background-color: var(--BACKGROUNDCOLOR);
+    color: white; /* white font */
+    background-color: var(--ACCENTCOLOR); /* accent color background */
 }
 
 .team-list {
@@ -447,11 +456,13 @@ nav .fa-solid.fa-xmark, .fa-solid.fa-bars{
 /* ----------- Skills Section ----------- */
 #skills {
     padding: 80px 0;
-    background-color: #f7f7f7;
-    color: var(--FONTCOLOR);
+    background-color: var(--ACCENTCOLOR); /* accent color background */
+    color: white; /* white font */
     text-align: center;
 }
-
+#skills .skills-intro {
+    color: white;
+}
 .skills-intro {
     max-width: 900px;
     margin: 20px auto 50px auto;
